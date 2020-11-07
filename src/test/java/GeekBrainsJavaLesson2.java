@@ -61,7 +61,6 @@ public class GeekBrainsJavaLesson2 {
 
 	//**Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);
 	public static void minMaxElementsInArray() {
-
 		int[] arr = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
 		int max = arr[0];
 		int min = arr[0];
@@ -93,7 +92,7 @@ public class GeekBrainsJavaLesson2 {
 	// Примеры: [ 1, 2, 3 ] при n = 1 (на один вправо) -> [ 3, 1, 2 ]; [ 3, 5, 6, 1] при n = -2 (на два влево) -> [ 6, 1, 3, 5 ].
 	// При каком n в какую сторону сдвиг можете выбирать сами.
 	public static void arrayStepAside(){
-		
+
 
 	}
 }
