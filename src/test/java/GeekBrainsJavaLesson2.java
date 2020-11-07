@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class GeekBrainsJavaLesson2 {
@@ -82,9 +83,19 @@ public class GeekBrainsJavaLesson2 {
 	//метод должен вернуть true, если в массиве есть место, в котором сумма левой и правой части массива равны.
 	//Примеры: checkBalance([2, 2, 2, 1, 2, 2, || 10, 1]) → true, checkBalance([1, 1, 1, || 2, 1]) → true,
 	//граница показана символами ||, эти символы в массив не входят.
-	public static void leftEqualsRight() {
-
-
+	public static boolean leftEqualsRight() {
+		int[] arr = {2, 2, 2, 1, 2, 2, 10, 2};
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[arr.length - 3]
+					+ arr[arr.length - 4]
+					+ arr[arr.length - 5]
+					+ arr[arr.length - 6]
+					+ arr[arr.length - 7]
+					+ arr[arr.length - 8] == arr[arr.length - 2] + arr[arr.length - 1]) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	//**** Написать метод, которому на вход подается одномерный массив и число n (может быть положительным, или отрицательным),
@@ -92,8 +103,8 @@ public class GeekBrainsJavaLesson2 {
 	// Для усложнения задачи нельзя пользоваться вспомогательными массивами.
 	// Примеры: [ 1, 2, 3 ] при n = 1 (на один вправо) -> [ 3, 1, 2 ]; [ 3, 5, 6, 1] при n = -2 (на два влево) -> [ 6, 1, 3, 5 ].
 	// При каком n в какую сторону сдвиг можете выбирать сами.
-	public static void arrayStepAside(){
-		
+	public static void arrayStepAside() {
+
 
 	}
 }
